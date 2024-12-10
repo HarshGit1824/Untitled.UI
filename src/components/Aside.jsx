@@ -34,15 +34,15 @@ const Aside = () => {
   ];
 
   return (
-    <div className="flex min-h-screen flex-col justify-between">
+    <div className="flex min-h-full flex-col justify-between">
       {/* Contact Information */}
       <section>
         {contactInfo.map((info) => {
           return (
-            <div className="mb-5" key={info.id}>
+            <div className="mb-7" key={info.id}>
               {<info.icon size={25} />}
               <h3 className="text-lg font-bold">{info.title}</h3>
-              <p className="mb-2 text-slate-700">{info.description}</p>
+              <p className="mb-1 text-slate-700">{info.description}</p>
               <p>{info.action}</p>
             </div>
           );
@@ -50,10 +50,10 @@ const Aside = () => {
       </section>
 
       {/* Social */}
-      <section className="flex gap-1 text-lime-700">
-        <RiFacebookCircleFill  size={30}/>
-        <RiTwitterXFill size={30}/>
-        <RiLinkedinBoxLine size={30}/>
+      <section className="flex gap-1 text-violet-700">
+        <RiFacebookCircleFill size={30} />
+        <RiTwitterXFill size={30} />
+        <RiLinkedinBoxLine size={30} />
       </section>
     </div>
   );

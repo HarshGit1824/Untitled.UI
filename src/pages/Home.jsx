@@ -11,7 +11,7 @@ const Home = () => {
         <div className="col-span-2 hidden md:block">
           <Aside />
         </div>
-        <div className="col-span-full rounded-lg p-5 md:col-span-6 md:bg-lime-400">
+        <div className="col-span-full rounded-lg p-5 md:col-span-6 md:bg-violet-500">
           <Form />
         </div>
       </main>
