@@ -1,5 +1,6 @@
 import React from "react";
-import { RiMagicLine, RiSparklingFill } from "react-icons/ri";
+import { RiSparklingFill } from "react-icons/ri";
+import Intro from "./Intro";
 
 const Form = () => {
   const services = [
@@ -14,15 +15,11 @@ const Form = () => {
   return (
     <>
       {/* Intro */}
-      <h1 className="mb-3 text-3xl font-bold">
-        Got Ideas? <RiMagicLine className="inline-block" /> We've got <br /> the
-        skills. Let's team up.
-      </h1>
-      <p className="mb-6 text-xl">
-        Tell us more about yourself and what's on your mind.
-      </p>
-      {/* Inputs */}
+      <Intro />
+
+      
       <form className="flex flex-col gap-1">
+        {/* Inputs */}
         <input
           type="text"
           name="fullname"
@@ -46,7 +43,8 @@ const Form = () => {
         />
 
         <p className="my-5 text-gray-800">How can we help?</p>
-        <div className="mb-5 grid max-w-96 grid-cols-2">
+        {/* Checkbox */}
+        <div className="mb-10 grid max-w-96 grid-cols-2">
           {services.map((service, idx) => {
             return (
               <label key={idx} className="flex cursor-pointer gap-2">
@@ -56,6 +54,8 @@ const Form = () => {
             );
           })}
         </div>
+
+        {/* Submit */}
         <button
           type="submit"
           className="flex items-center justify-center gap-2 rounded bg-zinc-950 p-2 text-white"
