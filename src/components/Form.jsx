@@ -17,7 +17,6 @@ const Form = () => {
       {/* Intro */}
       <Intro />
 
-      
       <form className="flex flex-col gap-1">
         {/* Inputs */}
         <input
